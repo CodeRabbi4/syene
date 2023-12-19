@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
+    list-style: none;
 }
 :root{
     --bg-color:#ECFAFD;
@@ -23,6 +24,10 @@ body{
     color: white;
     text-decoration: none;
     text-align: center;
+    transition: all 0.3s ease 0s !important;
+}
+.primary-btn:hover{
+    background:#bf7403
 }
 /* Media query */
 @media screen and (max-width:768px) {
@@ -333,12 +338,13 @@ body{
         font-size: 35px;
     }
     .card-body h4{
-        font-size: 27px;
+        font-size: 24px;
         text-align: center;
     }
     .card-body .details{
         flex-direction: column;
         align-items: center;
+        gap: 6px;
     }
     .prop-address{
         width: 90%;
@@ -346,7 +352,464 @@ body{
     }
     .props-rate{
         width: 90%;
+        font-size: 18px;
     }
 }
 /* Media Query End */
 /* Properties Sale section End */
+
+/* Services Section Start*/
+.services-section{
+    width: 100%;
+    padding: 30px 0px 100px;
+}
+.service-head h1{
+    color: var(--primary);
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px; 
+}
+.service-head p{
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.service-card{
+    width: 95% !important;
+}
+.service-card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.service-card h3{
+    overflow: hidden;
+    color: var(--primary);
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.service-card p{
+    overflow: hidden;
+    color: var(--secondary);
+    text-overflow: ellipsis;
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Media Query Start */
+
+@media screen and (max-width:768px) {
+    .service-head h1{
+        font-size: 44px;
+    }
+}
+@media screen and (max-width:576px) {
+    .service-head h1{
+        font-size: 38px;
+    }
+}
+@media screen and (max-width:440px) {
+    .service-head h1{
+        font-size: 35px;
+    }
+    .service-head p{
+        font-size: 18px;
+    }
+    .service-card p{
+        font-size: 19px;
+    }
+}
+
+/* Media Query End */
+/* Services Section End */
+
+/* Commitment Section Start */
+.commitment-section{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(270deg, #17479E 57.9%, rgba(23, 71, 158, 0.00) 85.88%), 
+    url(./Images/CommitmentImage.png ) no-repeat;
+    background-position:left center ;
+    background-size: contain;
+}
+.commit-text {
+    width:50%;
+    padding: 80px 0px;
+}
+.commit-text h1{
+    color:#FFF;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.commit-text p{
+    color:#FFF;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* Media Query Start */
+@media screen and (max-width:992px) {
+    .commit-text {
+        width: 58%;
+        padding: 40px 0px;
+    }
+    .commit-text h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:768px) {
+    .commitment-section{
+        background: linear-gradient( #17479E 57.9%, #17479E 57.9%)
+    }
+    .commit-text {
+        width: 100%;
+    }
+    .commit-text h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:576px) {
+    .commit-text {
+        padding: 40px 20px;
+    }
+    .commit-text h1{
+        font-size: 38px;
+    }
+}
+@media screen and (max-width:440px) {
+    .commit-text {
+        padding: 40px 5px;
+    }
+    .commit-text h1{
+        font-size: 32px;
+    }
+    .commit-text p{
+        font-size: 18px;
+    }
+}
+/* Media Query End */
+/* Commitment Section End */
+
+/* Why Choose Section Start */
+.why-choose-section{
+    width: 100%;
+    padding:100px 0px 80px;
+}
+.choose-head h1{
+    color: var(--primary);
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.choose-head p{
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.choose-body {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(238, 237, 237, 0.01);
+    background: linear-gradient( rgba(238, 237, 237, 0.70),rgba(238, 237, 237, 0.70)),
+     url(./Images/chooseChart.png) no-repeat;
+    background-position: center 180px;
+    background-size:calc(800px - 10px);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.24), 0px 8px 16px 0px rgba(0, 0, 0, 0.28);
+    padding: 30px;
+}
+.chart-head{
+    color: var(--primary);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.Chartimage{
+    width: 65px;
+    object-fit: contain;
+}
+.chart-text p{
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 400;
+}
+.chart-mid-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+.chart-mid-text h4{
+    color: var(--primary);
+    font-size: 28px;
+    font-weight: 600;
+}
+.chart-mid-text img{
+    width: 100px ;
+    object-fit: contain;
+}
+.chart-bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+}
+.chart-bottom h4{
+    color: var(--primary);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.quote-btn {
+    margin-top: 60px;
+}
+.quote-btn > a{
+    padding: 12px 80px;
+}
+
+/* Media Query Start */
+@media screen and (max-width:1200px) {
+    .chart-bottom {
+        margin: 10px 0px 30px;
+        align-items: center;
+    }
+    .chart-mid-text h4{
+        font-size: 25px;
+    }
+    .chart-mid-text img{
+        width: 80px ;
+    }
+    .chart-mid-text{
+        justify-content: space-around;
+    }
+    .Chartimage{
+        width: 60px;
+    }
+}
+@media screen and (max-width:992px) {
+    .choose-head h1{
+        font-size: 42px;
+    }
+    .Chartimage{
+       margin: 20px 0px;
+    }
+    .chart-mid-text{
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:768px) {
+    .choose-head h1{
+        font-size: 38px;
+    }
+    .Chartimage{
+       margin: 20px 0px;
+    }
+    .chart-mid-text{
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:576px) {
+    .choose-head h1{
+        font-size: 32px;
+    }
+    .chart-head{
+        font-size: 24px;
+    }
+    .chart-text p{
+        font-size: 18px;
+    }
+    .Chartimage{
+       width: 50px;
+       margin: 10px 0px;
+    }
+    .chart-mid-text{
+        justify-content: space-between;
+    }
+    .chart-mid-text h4{
+        font-size: 22px;
+    }
+    .chart-bottom h4{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:440px) {
+    .choose-head p{
+        font-size: 18px;
+    }
+    .chart-mid-text img{
+        width: 60px ;
+    }
+    .quote-btn > a{
+        padding: 12px 60px;
+    }
+}
+/* Media Query End */
+/* Why Choose Section End */
+
+
+/* Inquiry Section Start  */
+.inquiry-section{
+    width: 100%;
+    padding: 30px 0px 80px;
+}
+.inquiry-bg{
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 60px 80px;
+}
+.inquiry-head{
+    color:#FFF;
+    font-size: 48px;
+    font-weight: 600;
+}
+.inquire-form input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #FFF !important;
+    color: #FFF;
+    font-size: 20px;
+}
+.inquire-form input::placeholder{
+    color: #FFF;
+    text-align: justify;
+    font-size: 20px;
+}
+.inquire-form .send-btn button {
+    border-radius: 10px;
+    background:  #F5F5F5;
+    padding: 12px 50px;
+    color: var(--primary);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+
+}
+
+/* Media query Start */
+@media screen and (max-width:992px) {
+    .inquiry-head{
+        font-size: 44px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:768px) {
+    .inquiry-bg{
+        padding: 40px 30px;
+    }
+    .inquiry-head{
+        font-size: 38px;
+    }
+}
+@media screen and (max-width:576px) {
+    .inquiry-bg{
+        padding: 40px 30px;
+    }
+    .inquiry-head{
+        font-size: 32px;
+    }
+    .inquire-form input{
+        font-size:18px ;
+    }
+    .inquire-form input::placeholder{
+        font-size: 18px;
+    }
+    .inquire-form .send-btn button {
+        font-size: 18px;
+    }
+}
+/* Media query End */
+/* Inquiry Section End  */
+
+
+/* Footer Start */
+.footer-content{
+    width: 100%;
+    padding: 40px 0px 60px;
+}
+.footer-logo {
+    width: 98px;
+}
+.footer-link h5{
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer-link a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.footer-copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.copy-link {
+    display: flex;
+    gap: 25px;
+}
+.copy-link a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.copy-text{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* Media Query Start */
+@media screen and (max-width:992px) {
+    .footer-copy {
+        justify-content:center;
+        flex-direction: column;
+        gap:20px;
+    } 
+    .footer-logo {
+        width: 85px;
+    }
+}
+@media screen and (max-width:576px) {
+    .footer-logo {
+        width: 70px;
+    }
+    .footer-link h5{
+        color: #000;
+        font-size: 20px;
+    }
+    .copy-link {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .copy-link a{
+        font-size: 18px;
+    }
+    .copy-text{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+/* Media Query End */
+/* Footer End */
