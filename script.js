@@ -1,6 +1,5 @@
-let copy_year = document.getElementById("copy-year")
 
-let swiper =new Swiper(".mySwiper", {
+let swiperProjects = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
       autoplay: {
@@ -12,9 +11,3 @@ let swiper =new Swiper(".mySwiper", {
       clickable: true,
     },
   });
-
-const time =()=>{
-  const year = new Date().getFullYear();
-  copy_year.innerHTML= year
-};
-time();
